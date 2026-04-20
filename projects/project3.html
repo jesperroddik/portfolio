@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KPI Performance Dashboard — Power BI project by Jesper">
+  <title>KPI Performance Dashboard | Jesper</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-brand" href="../index.html">JR<span class="accent">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-page">
+    <div class="container">
+
+      <a href="../index.html#projects" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+
+      <div class="project-hero powerbi">
+        <i class="fas fa-chart-pie"></i>
+        <h1>KPI Performance Dashboard</h1>
+        <div class="project-meta">
+          <span><i class="fas fa-tools"></i> Power BI · DAX · Power Query</span>
+          <span><i class="fas fa-calendar"></i> 2026</span>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Overview</h2>
+        <p>
+          <!-- Replace with your real project description -->
+          An interactive executive dashboard built in Power BI to track key business KPIs
+          including revenue, growth rate, and regional performance. Designed for weekly
+          leadership reviews with dynamic slicers and drill-through capabilities.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Methodology</h2>
+        <ul>
+          <li>Connected Power BI to multiple data sources via Power Query — ERP exports and SQL database</li>
+          <li>Modelled a star schema with fact and dimension tables for optimal query performance</li>
+          <li>Wrote DAX measures for YoY growth, running totals, and rolling averages</li>
+          <li>Designed the report layout with slicers (region, product line, time period) and drill-through pages</li>
+          <li><!-- Add more steps from your actual project --></li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Screenshots</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot-placeholder">
+            <i class="fas fa-image"></i>
+            <span>Executive KPI overview page — replace with real screenshot</span>
+          </div>
+          <div class="screenshot-placeholder">
+            <i class="fas fa-image"></i>
+            <span>Regional breakdown drill-through — replace with real screenshot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Results</h2>
+        <p>
+          <!-- Replace with your actual findings -->
+          Reduced weekly reporting preparation time from 4 hours to under 30 minutes.
+          The dashboard is used by 3 regional managers to track against quarterly targets in real time.
+        </p>
+      </div>
+
+      <div class="project-section project-links">
+        <!-- Update href to your actual repo or Power BI publish link -->
+        <a href="https://github.com/jesperroddik/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

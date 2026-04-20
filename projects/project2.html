@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customer Segmentation — SQL and PostgreSQL project by Jesper">
+  <title>Customer Segmentation | Jesper</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-brand" href="../index.html">JR<span class="accent">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-page">
+    <div class="container">
+
+      <a href="../index.html#projects" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+
+      <div class="project-hero sql">
+        <i class="fas fa-database"></i>
+        <h1>Customer Segmentation</h1>
+        <div class="project-meta">
+          <span><i class="fas fa-tools"></i> SQL · PostgreSQL · RFM Analysis</span>
+          <span><i class="fas fa-calendar"></i> 2026</span>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Overview</h2>
+        <p>
+          <!-- Replace with your real project description -->
+          This project uses SQL to perform RFM (Recency, Frequency, Monetary) analysis on an
+          e-commerce transactions database, segmenting customers into groups such as Champions,
+          At-Risk, and Lost — enabling targeted retention campaigns.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Methodology</h2>
+        <ul>
+          <li>Queried raw transactional data from a PostgreSQL database spanning 18 months</li>
+          <li>Calculated RFM scores per customer using window functions and CTEs</li>
+          <li>Defined score thresholds to classify customers into 5 segments</li>
+          <li>Exported segment summary tables for use in marketing dashboards</li>
+          <li><!-- Add more steps from your actual project --></li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Screenshots</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot-placeholder">
+            <i class="fas fa-image"></i>
+            <span>RFM score distribution — replace with real screenshot</span>
+          </div>
+          <div class="screenshot-placeholder">
+            <i class="fas fa-image"></i>
+            <span>Customer segment breakdown table — replace with real screenshot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Results</h2>
+        <p>
+          <!-- Replace with your actual findings -->
+          Identified that 12% of customers were "Champions" responsible for 48% of revenue,
+          while 23% were "At-Risk" — enabling focused re-engagement campaigns targeting high-value churners.
+        </p>
+      </div>
+
+      <div class="project-section project-links">
+        <!-- Update href to your actual repo URL -->
+        <a href="https://github.com/jesperroddik/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

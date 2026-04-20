@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jesper — Data Analyst portfolio showcasing Python, SQL, Data Visualization, and Power BI projects.">
+  <title>Jesper | Data Analytics Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       Navigation
+       ============================================================ -->
+  <nav id="navbar">
+    <a class="nav-brand" href="#hero">JR<span class="accent">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       Hero
+       ============================================================ -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tagline">Hi, I'm</p>
+      <h1 class="hero-name">Jesper</h1>
+      <h2 class="hero-role">Data Analyst</h2>
+      <p class="hero-sub">
+        Turning raw data into clear decisions — with Python, SQL, and visual storytelling.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       About
+       ============================================================ -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <!-- Replace this placeholder with: <img src="assets/photo.jpg" alt="Jesper"> -->
+          <div class="photo-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a data analyst with a passion for transforming messy datasets into actionable insights.
+            My toolkit spans Python (pandas, numpy), SQL, Power BI, and data visualization.
+          </p>
+          <p>
+            <!-- Add your personal background, education, or goals here. -->
+            I enjoy finding patterns in data and communicating findings in a way that drives real decisions.
+            Always looking to learn new tools and tackle interesting analytical challenges.
+          </p>
+          <!-- Update the href to point to your actual CV file, e.g. href="assets/jesper-cv.pdf" -->
+          <a href="#" class="btn btn-outline">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Skills
+       ============================================================ -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <!-- Skill icon cards -->
+      <div class="skill-cards">
+        <div class="skill-card">
+          <i class="fab fa-python skill-icon"></i>
+          <span>Python</span>
+          <small>pandas · numpy · matplotlib</small>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database skill-icon"></i>
+          <span>SQL</span>
+          <small>PostgreSQL · MySQL · BigQuery</small>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-chart-line skill-icon"></i>
+          <span>Data Visualization</span>
+          <small>matplotlib · seaborn · Plotly</small>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-chart-pie skill-icon"></i>
+          <span>Power BI</span>
+          <small>DAX · Power Query · Reporting</small>
+        </div>
+      </div>
+
+      <!-- Animated proficiency bars -->
+      <div class="skill-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">
+            <span>Python</span><span>90%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">
+            <span>SQL</span><span>85%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">
+            <span>Data Visualization</span><span>80%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="80"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label">
+            <span>Power BI</span><span>75%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" data-width="75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Projects
+       ============================================================ -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1: Python -->
+        <article class="project-card">
+          <div class="project-card-header python">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="project-card-body">
+            <span class="project-tag">Python · pandas · matplotlib</span>
+            <h3>Sales Trend Analysis</h3>
+            <p>
+              Exploratory analysis of 3-year retail sales data to uncover
+              seasonality patterns and forecast revenue trends.
+            </p>
+            <a href="projects/project1.html" class="btn btn-sm btn-outline">View Project</a>
+          </div>
+        </article>
+
+        <!-- Project 2: SQL -->
+        <article class="project-card">
+          <div class="project-card-header sql">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="project-card-body">
+            <span class="project-tag">SQL · PostgreSQL</span>
+            <h3>Customer Segmentation</h3>
+            <p>
+              RFM-based customer segmentation using SQL queries to identify
+              high-value and at-risk customer groups from transactional data.
+            </p>
+            <a href="projects/project2.html" class="btn btn-sm btn-outline">View Project</a>
+          </div>
+        </article>
+
+        <!-- Project 3: Power BI -->
+        <article class="project-card">
+          <div class="project-card-header powerbi">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <div class="project-card-body">
+            <span class="project-tag">Power BI · DAX</span>
+            <h3>KPI Performance Dashboard</h3>
+            <p>
+              Interactive executive dashboard tracking sales KPIs, growth metrics,
+              and regional performance with dynamic slicers and drill-through.
+            </p>
+            <a href="projects/project3.html" class="btn btn-sm btn-outline">View Project</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Contact
+       ============================================================ -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-sub">Open to opportunities and collaborations — feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:jesperroddik@gmail.com" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          jesperroddik@gmail.com
+        </a>
+        <a href="https://github.com/jesperroddik" class="contact-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+          github.com/jesperroddik
+        </a>
+        <!-- Update href with your real LinkedIn URL -->
+        <a href="https://linkedin.com/in/" class="contact-link" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Footer
+       ============================================================ -->
+  <footer>
+    <p>Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
