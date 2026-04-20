@@ -286,6 +286,14 @@ section {
   color: var(--text-muted);
 }
 
+.about-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
 .about-text p {
   color: var(--text-muted);
   margin-bottom: 1rem;
