@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sales Trend Analysis — Python and pandas project by Jesper">
-  <title>Sales Trend Analysis | Jesper</title>
+  <meta name="description" content="E-Commerce Analytics Dashboard — Python, SQL, Neon, Streamlit project by Jesper">
+  <title>E-Commerce Analytics Dashboard | Jesper</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,9 +36,9 @@
 
       <div class="project-hero python">
         <i class="fab fa-python"></i>
-        <h1>Sales Trend Analysis</h1>
+        <h1>E-Commerce Analytics Dashboard</h1>
         <div class="project-meta">
-          <span><i class="fas fa-tools"></i> Python · pandas · matplotlib · seaborn</span>
+          <span><i class="fas fa-tools"></i> Python · SQL · Neon · Streamlit · Claude Code</span>
           <span><i class="fas fa-calendar"></i> 2026</span>
         </div>
       </div>
@@ -46,22 +46,20 @@
       <div class="project-section">
         <h2>Overview</h2>
         <p>
-          <!-- Replace with your real project description -->
-          A regional retailer needed to understand 3-year sales trends to inform inventory
-          planning and promotional strategy. This project performs end-to-end exploratory
-          data analysis on transactional sales data, surfaces seasonality patterns, and
-          visualizes key revenue drivers.
+          Interactive marketing and customer analytics dashboard backed by a Neon serverless PostgreSQL database.
+          Two-tab Streamlit app: campaign efficiency KPIs (ROAS, CTR, CVR, CPA) with interactive filters,
+          and RFM-based customer segmentation across 8,000+ customers.
         </p>
       </div>
 
       <div class="project-section">
         <h2>Methodology</h2>
         <ul>
-          <li>Loaded and cleaned raw sales CSV data using pandas — handled missing values, date parsing, and duplicate entries</li>
-          <li>Aggregated sales by month, product category, and region using groupby operations</li>
-          <li>Identified seasonal peaks and troughs with time-series decomposition</li>
-          <li>Visualized trends using matplotlib and seaborn — line charts, heatmaps, and bar plots</li>
-          <li><!-- Add more steps from your actual project --></li>
+          <li>Designed a star schema in Neon PostgreSQL — fact tables for marketing spend and customer RFM scores, dimension tables for campaigns, channels, and customers</li>
+          <li>Queried and aggregated data with SQL via psycopg2; processed results with pandas and numpy</li>
+          <li>Built a two-tab Streamlit dashboard with multi-select filters and caching for performance</li>
+          <li>Visualized campaign ROAS, CTR vs CVR scatter, CPA by channel, and customer segment distribution using Plotly Express</li>
+          <li>Used Claude Code to accelerate schema design, query writing, and dashboard layout</li>
         </ul>
       </div>
 
@@ -70,11 +68,11 @@
         <div class="screenshot-grid">
           <div class="screenshot-placeholder">
             <i class="fas fa-image"></i>
-            <span>Monthly revenue trend chart — replace with real screenshot</span>
+            <span>Campaign efficiency tab — ROAS, CTR/CVR scatter, CPA by channel</span>
           </div>
           <div class="screenshot-placeholder">
             <i class="fas fa-image"></i>
-            <span>Sales heatmap by category &amp; month — replace with real screenshot</span>
+            <span>Customer segmentation tab — RFM donut, frequency/value by segment, income mix</span>
           </div>
         </div>
       </div>
@@ -82,14 +80,13 @@
       <div class="project-section">
         <h2>Results</h2>
         <p>
-          <!-- Replace with your actual findings -->
-          Identified a consistent Q4 sales spike of ~35% driven by two product categories.
-          Seasonal insight enabled better inventory pre-positioning and reduced stockouts by an estimated 20%.
+          Identified top-performing campaign types and channels by ROAS and CPA.
+          Segmented customers into Champions, Loyal, Regular, Recent, and At-Risk groups —
+          revealing income bracket composition per segment to guide targeting strategy.
         </p>
       </div>
 
       <div class="project-section project-links">
-        <!-- Update href to your actual repo URL -->
         <a href="https://github.com/jesperroddik/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i> View on GitHub
         </a>
