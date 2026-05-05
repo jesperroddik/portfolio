@@ -576,6 +576,12 @@ footer {
 }
 .project-hero.powerbi i { color: #f2c811; }
 
+.project-hero.analytics {
+  background: linear-gradient(135deg, #58a6ff20, #58a6ff08);
+  border: 1px solid #58a6ff40;
+  color: var(--text);
+}
+
 .project-meta {
   display: flex;
   gap: 1.5rem;
