@@ -599,9 +599,9 @@ footer {
 }
 
 .project-meta i {
-  font-size: 0.85rem;
-  line-height: 1;
+  font-size: 1rem;
   flex-shrink: 0;
+  vertical-align: middle;
 }
 
 .project-section {
