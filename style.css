@@ -577,9 +577,30 @@ footer {
 .project-hero.powerbi i { color: #f2c811; }
 
 .project-hero.analytics {
-  background: linear-gradient(135deg, #58a6ff20, #58a6ff08);
-  border: 1px solid #58a6ff40;
+  background:
+    radial-gradient(ellipse at 88% 85%, rgba(88, 166, 255, 0.13) 0%, transparent 55%),
+    linear-gradient(rgba(88, 166, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(88, 166, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(88, 166, 255, 0.12), rgba(88, 166, 255, 0.03));
+  background-size: auto, 32px 32px, 32px 32px, 100% 100%;
+  border: 1px solid rgba(88, 166, 255, 0.25);
   color: var(--text);
+}
+
+.project-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid rgba(88, 166, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.28rem 0.85rem;
+  margin-bottom: 1rem;
 }
 
 .project-meta {
@@ -614,6 +635,20 @@ footer {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-section h2::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 1.1em;
+  background: var(--accent);
+  border-radius: 2px;
+  flex-shrink: 0;
+  opacity: 0.55;
 }
 
 .project-section p {
@@ -661,6 +696,12 @@ footer {
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--surface);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.screenshot-item:hover {
+  border-color: rgba(88, 166, 255, 0.35);
+  box-shadow: 0 4px 24px rgba(88, 166, 255, 0.08);
 }
 
 .screenshot-img {
@@ -678,12 +719,13 @@ footer {
   font-size: 0.8rem;
   color: var(--text-muted);
   border-top: 1px solid var(--border);
+  background: var(--surface-2);
 }
 
 /* Tech stack icons */
 .tech-stack {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -696,11 +738,13 @@ footer {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 999px;
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
 }
 
 .tech-item:hover {
   border-color: var(--accent);
+  background: rgba(88, 166, 255, 0.06);
+  box-shadow: 0 0 0 1px rgba(88, 166, 255, 0.15);
 }
 
 .tech-item img {

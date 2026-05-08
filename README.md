@@ -1,4 +1,4 @@
-# Jesper — Data Analytics Portfolio
+# Jesper: Data Analytics Portfolio
 
 Personal portfolio website showcasing data analytics projects and skills.
 
@@ -25,9 +25,9 @@ Python (pandas, numpy) · SQL · PostgreSQL · Streamlit · Plotly · Power BI
 
 ## Projects
 
-1. **E-Commerce Analytics Dashboard** — Two-tab Streamlit app backed by a Neon serverless PostgreSQL database. Tab 1 shows campaign efficiency KPIs (ROAS, CTR, CVR, CPA) with interactive filters; Tab 2 provides RFM-based customer segmentation across 8,000+ customers. Star schema designed in Neon, queries written with psycopg2, visualizations built with Plotly Express.
-2. **Customer Segmentation** — RFM analysis with SQL/PostgreSQL to identify customer groups
-3. **KPI Performance Dashboard** — Interactive Power BI executive dashboard with DAX measures
+1. **E-Commerce Analytics Dashboard**: Two-tab Streamlit app backed by a Neon serverless PostgreSQL database. Tab 1 shows campaign efficiency KPIs (ROAS, CTR, CVR, CPA) with interactive filters; Tab 2 provides RFM-based customer segmentation across 8,000+ customers. Star schema designed in Neon, queries written with psycopg2, visualizations built with Plotly Express.
+2. **Customer Segmentation**: RFM analysis with SQL/PostgreSQL to identify customer groups
+3. **KPI Performance Dashboard**: Interactive Power BI executive dashboard with DAX measures
 
 ## Deploying to GitHub Pages
 
