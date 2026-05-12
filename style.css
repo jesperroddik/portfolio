@@ -786,6 +786,93 @@ footer {
 }
 
 /* ============================================================
+   Certificates
+   ============================================================ */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.cert-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.cert-card-header.cert-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.cert-card-header.cert-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.cert-card:hover .cert-card-header.cert-preview img {
+  transform: scale(1.04);
+}
+
+.cert-card-header.cert-icon {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+
+.cert-card-header.cert-pm {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.18), rgba(124, 58, 237, 0.05));
+  color: #a78bfa;
+}
+
+.cert-card-header.cert-python-ai {
+  background: linear-gradient(135deg, #30699830, #ffd43b15);
+  color: #ffd43b;
+}
+
+.cert-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cert-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  width: fit-content;
+}
+
+.cert-card-body h3 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+/* ============================================================
    Responsive
    ============================================================ */
 @media (max-width: 768px) {
@@ -839,6 +926,10 @@ footer {
 
   .skill-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-cta {
