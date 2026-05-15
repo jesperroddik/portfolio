@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Customer Segmentation: SQL and PostgreSQL project by Jesper">
-  <title>Customer Segmentation | Jesper</title>
+  <meta name="description" content="HR Analytics Dashboard: Python, BigQuery, Tableau project by Jesper">
+  <title>HR Analytics Dashboard | Jesper</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,11 +34,11 @@
         <i class="fas fa-arrow-left"></i> Back to Projects
       </a>
 
-      <div class="project-hero sql">
-        <i class="fas fa-database"></i>
-        <h1>Customer Segmentation</h1>
+      <div class="project-hero tableau">
+        <span class="project-hero-badge"> HR Analytics</span>
+        <h1>HR Analytics Dashboard</h1>
         <div class="project-meta">
-          <span><i class="fas fa-tools"></i> SQL · PostgreSQL · RFM Analysis</span>
+          <span><i class="fas fa-tools"></i> Python · BigQuery · Tableau · ETL Pipeline</span>
           <span><i class="fas fa-calendar"></i> 2026</span>
         </div>
       </div>
@@ -46,49 +46,96 @@
       <div class="project-section">
         <h2>Overview</h2>
         <p>
-          <!-- Replace with your real project description -->
-          This project uses SQL to perform RFM (Recency, Frequency, Monetary) analysis on an
-          e-commerce transactions database, segmenting customers into groups such as Champions,
-          At-Risk, and Lost, enabling targeted retention campaigns.
+          End-to-end HR analytics project built on the IBM HR Analytics Employee Attrition &amp; Performance
+          dataset (1,470 records, 35 features). The project covers the full data analyst workflow: ETL
+          pipeline into Google BigQuery, SQL-based analysis, and two interactive Tableau dashboards that
+          answer the core business question: <em>which employees are most at risk of leaving, and what
+          can the business do about it?</em>
         </p>
+      </div>
+
+      <div class="project-section">
+        <h2>ETL Pipeline</h2>
+        <ul>
+          <li>Ingested the IBM Attrition CSV into Google BigQuery, verified row counts (1,470) and column types, and established the full table path used throughout the project</li>
+          <li>Built <code>src/bq_client.py</code> using <code>google-cloud-bigquery</code> to authenticate via service account key and test the connection with a <code>SELECT COUNT(*)</code> query from Python</li>
+          <li>Wrote <code>src/etl.py</code> to extract the raw table into a pandas DataFrame, clean column names, cast types, handle nulls, and engineer new fields: tenure bands, income brackets, and satisfaction tiers</li>
+          <li>Wrote the transformed output back to BigQuery as <code>hr_analytics.employees_clean</code>, making it available as a single source of truth for both SQL queries and Tableau</li>
+          <li>Managed GCP credentials with <code>python-dotenv</code> and a service account key, keeping secrets out of version control via <code>.env.example</code></li>
+        </ul>
       </div>
 
       <div class="project-section">
         <h2>Methodology</h2>
         <ul>
-          <li>Queried raw transactional data from a PostgreSQL database spanning 18 months</li>
-          <li>Calculated RFM scores per customer using window functions and CTEs</li>
-          <li>Defined score thresholds to classify customers into 5 segments</li>
-          <li>Exported segment summary tables for use in marketing dashboards</li>
-          <li><!-- Add more steps from your actual project --></li>
+          <li>Wrote <code>analysis_queries.sql</code> with targeted BigQuery queries: attrition rate by department and job role, average tenure by role, salary bands, overtime vs attrition, and satisfaction score distributions</li>
+          <li>Conducted exploratory analysis in <code>notebooks/01_eda.ipynb</code> by pulling the cleaned table into pandas and visualising distributions, correlation heatmaps, and attrition breakdowns with matplotlib and seaborn</li>
+          <li>Connected Tableau Desktop to BigQuery via the native connector; used an Extract connection for performance and offline portability</li>
+          <li>Built a two-dashboard Tableau workbook with cross-dashboard Department filter actions and risk-based colour encoding, then exported as a packaged <code>.twbx</code> file</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Built With</h2>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/googlebigquery/4285F4" alt="BigQuery">
+            <span>BigQuery</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas">
+            <span>pandas</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/tableau/E97627" alt="Tableau">
+            <span>Tableau</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/git/F05032" alt="Git">
+            <span>Git</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2>Dashboards</h2>
+        <p>The Tableau workbook contains two dashboards, each answering a distinct business question.</p>
+        <ul>
+          <li><strong>Attrition Overview</strong> — headline KPI, attrition by department and job role (with company average reference lines), and overtime vs attrition side-by-side bars. All sheets respond to a shared Department filter action.</li>
+          <li><strong>Financial Drivers of Attrition</strong> — attrition rate across income bands, promotion recency groups, and salary hike bands, with a high-performer attrition line overlaid to test whether raises retain top talent.</li>
         </ul>
       </div>
 
       <div class="project-section">
         <h2>Screenshots</h2>
         <div class="screenshot-grid">
-          <div class="screenshot-placeholder">
-            <i class="fas fa-image"></i>
-            <span>RFM score distribution (replace with real screenshot)</span>
-          </div>
-          <div class="screenshot-placeholder">
-            <i class="fas fa-image"></i>
-            <span>Customer segment breakdown table (replace with real screenshot)</span>
-          </div>
+          <figure class="screenshot-item">
+            <img src="../assets/hr_dashboard/hr_project1.1.png" alt="Attrition overview dashboard: KPI, attrition by department, job role, and overtime" class="screenshot-img">
+            <figcaption>Attrition overview: KPI tile, attrition by department and job role, overtime vs attrition</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img src="../assets/hr_dashboard/hr_project1.2.png" alt="Financial drivers dashboard: income bands, promotion recency, salary hike bands" class="screenshot-img">
+            <figcaption>Financial drivers: attrition by income band, promotion recency, and salary hike</figcaption>
+          </figure>
         </div>
       </div>
 
       <div class="project-section">
         <h2>Results</h2>
         <p>
-          <!-- Replace with your actual findings -->
-          Identified that 12% of customers were "Champions" responsible for 48% of revenue,
-          while 23% were "At-Risk", enabling focused re-engagement campaigns targeting high-value churners.
+          Employees earning below $2K/month leave at roughly 3-4x the company average.
+          Overtime workers show attrition rates above 30%, versus ~10% for those who do not work overtime.
+          Sales Representatives have the highest attrition of any job role at ~40%.
+          Career stagnation is a clear risk signal: attrition climbs steeply for employees 10+ years
+          without a promotion, while income level proves a stronger predictor of leaving than raise percentage alone.
         </p>
       </div>
 
       <div class="project-section project-links">
-        <!-- Update href to your actual repo URL -->
         <a href="https://github.com/jesperroddik/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i> View on GitHub
         </a>

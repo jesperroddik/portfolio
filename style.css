@@ -428,6 +428,11 @@ section {
   color: #61b3de;
 }
 
+.project-card-header.tableau {
+  background: linear-gradient(135deg, #e9762730, #4285f415);
+  color: #e97627;
+}
+
 .project-card-header.powerbi {
   background: linear-gradient(135deg, #f2c81130, #f2c81115);
   color: #f2c811;
@@ -584,6 +589,14 @@ footer {
     linear-gradient(135deg, rgba(88, 166, 255, 0.12), rgba(88, 166, 255, 0.03));
   background-size: auto, 32px 32px, 32px 32px, 100% 100%;
   border: 1px solid rgba(88, 166, 255, 0.25);
+  color: var(--text);
+}
+
+.project-hero.tableau {
+  background:
+    radial-gradient(ellipse at 12% 85%, rgba(233, 118, 39, 0.12) 0%, transparent 55%),
+    linear-gradient(135deg, rgba(233, 118, 39, 0.10), rgba(66, 133, 244, 0.05));
+  border: 1px solid rgba(233, 118, 39, 0.30);
   color: var(--text);
 }
 
