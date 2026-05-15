@@ -57,14 +57,17 @@
       <div class="project-section">
         <h2>ETL Pipeline</h2>
         <ul>
-          <li>Ingested the IBM Attrition CSV into Google BigQuery</li>
-          <li>Extracted the raw table into a pandas DataFrame, cleaned column names, cast types, handled nulls, and engineer new fields</li>
+          <li>Ingested the IBM Attrition CSV into Google BigQuery and verified row counts, column types, and nulls</li>
+          <li>Built <code>src/bq_client.py</code> to authenticate via a GCP service account and query BigQuery from Python</li>
+          <li>Wrote <code>src/etl.py</code> to extract the raw table into pandas, clean column names, cast types, handle nulls, and engineer new fields (tenure bands, income brackets, satisfaction tiers)</li>
+          <li>Loaded the transformed data back to BigQuery as <code>hr_analytics.employees_clean</code> — the single source of truth for SQL queries and Tableau</li>
         </ul>
       </div>
 
       <div class="project-section">
         <h2>Methodology</h2>
         <ul>
+          <li>Wrote SQL queries in BigQuery covering attrition by department, job role, salary band, overtime, and promotion recency</li>
           <li>Conducted exploratory analysis in <code>notebooks/01_eda.ipynb</code> by pulling the cleaned table into pandas and visualising distributions, correlation heatmaps, and attrition breakdowns</li>
           <li>Connected Tableau Desktop to BigQuery via the native connector; used an Extract connection for performance and offline portability</li>
           <li>Built a two-dashboard Tableau workbook with cross-dashboard Department filter actions and exported as a packaged <code>.twbx</code> file</li>
@@ -101,8 +104,8 @@
         <h2>Dashboards</h2>
         <p>The Tableau workbook contains two dashboards, each answering a distinct business question.</p>
         <ul>
-          <li><strong>Attrition Overview</strong> — headline KPI, attrition by department and job role (with company average reference lines), and overtime vs attrition side-by-side bars. All sheets respond to a shared Department filter action.</li>
-          <li><strong>Financial Drivers of Attrition</strong> — attrition rate across income bands, promotion recency groups, and salary hike bands, with a high-performer attrition line overlaid to test whether raises retain top talent.</li>
+          <li><strong>Attrition Overview:</strong> headline KPI, attrition by department and job role (with company average reference lines), and overtime vs attrition side-by-side bars. All sheets respond to a shared Department filter action.</li>
+          <li><strong>Financial Drivers of Attrition:</strong> attrition rate across income bands, promotion recency groups, and salary hike bands, with a high-performer attrition line overlaid to test whether raises retain top talent.</li>
         </ul>
       </div>
 
