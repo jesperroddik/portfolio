@@ -49,29 +49,25 @@
           End-to-end HR analytics project built on the IBM HR Analytics Employee Attrition &amp; Performance
           dataset (1,470 records, 35 features). The project covers the full data analyst workflow: ETL
           pipeline into Google BigQuery, SQL-based analysis, and two interactive Tableau dashboards that
-          answer the core business question: <em>which employees are most at risk of leaving, and what
-          can the business do about it?</em>
+          answer the core business question: which employees are most at risk of leaving, and what
+          can the business do about it?
         </p>
       </div>
 
       <div class="project-section">
         <h2>ETL Pipeline</h2>
         <ul>
-          <li>Ingested the IBM Attrition CSV into Google BigQuery, verified row counts (1,470) and column types, and established the full table path used throughout the project</li>
-          <li>Built <code>src/bq_client.py</code> using <code>google-cloud-bigquery</code> to authenticate via service account key and test the connection with a <code>SELECT COUNT(*)</code> query from Python</li>
-          <li>Wrote <code>src/etl.py</code> to extract the raw table into a pandas DataFrame, clean column names, cast types, handle nulls, and engineer new fields: tenure bands, income brackets, and satisfaction tiers</li>
-          <li>Wrote the transformed output back to BigQuery as <code>hr_analytics.employees_clean</code>, making it available as a single source of truth for both SQL queries and Tableau</li>
-          <li>Managed GCP credentials with <code>python-dotenv</code> and a service account key, keeping secrets out of version control via <code>.env.example</code></li>
+          <li>Ingested the IBM Attrition CSV into Google BigQuery</li>
+          <li>Extracted the raw table into a pandas DataFrame, cleaned column names, cast types, handled nulls, and engineer new fields</li>
         </ul>
       </div>
 
       <div class="project-section">
         <h2>Methodology</h2>
         <ul>
-          <li>Wrote <code>analysis_queries.sql</code> with targeted BigQuery queries: attrition rate by department and job role, average tenure by role, salary bands, overtime vs attrition, and satisfaction score distributions</li>
-          <li>Conducted exploratory analysis in <code>notebooks/01_eda.ipynb</code> by pulling the cleaned table into pandas and visualising distributions, correlation heatmaps, and attrition breakdowns with matplotlib and seaborn</li>
+          <li>Conducted exploratory analysis in <code>notebooks/01_eda.ipynb</code> by pulling the cleaned table into pandas and visualising distributions, correlation heatmaps, and attrition breakdowns</li>
           <li>Connected Tableau Desktop to BigQuery via the native connector; used an Extract connection for performance and offline portability</li>
-          <li>Built a two-dashboard Tableau workbook with cross-dashboard Department filter actions and risk-based colour encoding, then exported as a packaged <code>.twbx</code> file</li>
+          <li>Built a two-dashboard Tableau workbook with cross-dashboard Department filter actions and exported as a packaged <code>.twbx</code> file</li>
         </ul>
       </div>
 
@@ -91,7 +87,7 @@
             <span>pandas</span>
           </div>
           <div class="tech-item">
-            <img src="https://cdn.simpleicons.org/tableau/E97627" alt="Tableau">
+            <img src="https://img.icons8.com/color/48/tableau-software.png" alt="Tableau">
             <span>Tableau</span>
           </div>
           <div class="tech-item">
@@ -114,11 +110,11 @@
         <h2>Screenshots</h2>
         <div class="screenshot-grid">
           <figure class="screenshot-item">
-            <img src="../assets/hr_dashboard/hr_project1.1.png" alt="Attrition overview dashboard: KPI, attrition by department, job role, and overtime" class="screenshot-img">
+            <img src="../assets/hr_dashboard/hr_project2.1.png" alt="Attrition overview dashboard: KPI, attrition by department, job role, and overtime" class="screenshot-img">
             <figcaption>Attrition overview: KPI tile, attrition by department and job role, overtime vs attrition</figcaption>
           </figure>
           <figure class="screenshot-item">
-            <img src="../assets/hr_dashboard/hr_project1.2.png" alt="Financial drivers dashboard: income bands, promotion recency, salary hike bands" class="screenshot-img">
+            <img src="../assets/hr_dashboard/hr_project2.2.png" alt="Financial drivers dashboard: income bands, promotion recency, salary hike bands" class="screenshot-img">
             <figcaption>Financial drivers: attrition by income band, promotion recency, and salary hike</figcaption>
           </figure>
         </div>
