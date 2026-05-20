@@ -14,19 +14,19 @@ portfolio/
 ├── assets/             # Photos, screenshots (add your own)
 ├── projects/
 │   ├── project1.html   # E-Commerce Analytics Dashboard (Python, SQL, Neon, Streamlit)
-│   ├── project2.html   # Customer Segmentation (SQL)
+│   ├── project2.html   # HR Analytics Dashboard (Python, BigQuery, Tableau)
 │   └── project3.html   # KPI Performance Dashboard (Power BI)
 └── README.md
 ```
 
 ## Skills Highlighted
 
-Python (pandas, numpy) · SQL · PostgreSQL · Streamlit · Plotly · Power BI
+Python (pandas, numpy) · SQL · PostgreSQL · BigQuery · Streamlit · Plotly · Tableau · Power BI
 
 ## Projects
 
 1. **E-Commerce Analytics Dashboard**: Two-tab Streamlit app backed by a Neon serverless PostgreSQL database. Tab 1 shows campaign efficiency KPIs (ROAS, CTR, CVR, CPA) with interactive filters; Tab 2 provides RFM-based customer segmentation across 8,000+ customers. Star schema designed in Neon, queries written with psycopg2, visualizations built with Plotly Express.
-2. **Customer Segmentation**: RFM analysis with SQL/PostgreSQL to identify customer groups
+2. **HR Analytics Dashboard**: End-to-end HR analytics pipeline built on the IBM Attrition dataset (1,470 records). ETL into Google BigQuery, SQL analysis, EDA in pandas/Jupyter, and two interactive Tableau dashboards answering which employees are most at risk of leaving and why.
 3. **KPI Performance Dashboard**: Interactive Power BI executive dashboard with DAX measures
 
 ## Deploying to GitHub Pages
