@@ -25,6 +25,7 @@ const translations = {
     // Skills
     'skills.title':    'Skills',
     'skills.dataviz':  'Data Visualization',
+    'skills.excel':    'Excel & Spreadsheets',
     'skills.excel.sub': 'pivot tables · Power Query · reporting',
 
     // Projects
@@ -63,7 +64,7 @@ const translations = {
 
     // Project 1
     'p1.badge':      'Analytics',
-    'p1.title':      'E-Commerce Dashboard',
+    'p1.title':      'E-Commerce Analytics Dashboard',
     'p1.overview':   'Interactive marketing and customer analytics dashboard backed by a Neon serverless PostgreSQL database. Two-tab Streamlit app: campaign efficiency KPIs (ROAS, CTR, CVR, CPA) with interactive filters, and RFM-based customer segmentation across 8,000+ customers.',
     'p1.method.1':   'Designed a star schema in Neon PostgreSQL with fact tables for marketing spend and customer RFM scores, and dimension tables for campaigns, channels, and customers',
     'p1.method.2':   'Queried and aggregated data with SQL via psycopg2; processed results with pandas and numpy',
@@ -126,6 +127,7 @@ const translations = {
     // Skills
     'skills.title':     'Kompetencer',
     'skills.dataviz':   'Datavisualisering',
+    'skills.excel':     'Excel & Regneark',
     'skills.excel.sub': 'pivottabeller · Power Query · rapportering',
 
     // Projects
@@ -164,7 +166,7 @@ const translations = {
 
     // Project 1
     'p1.badge':    'Analyse',
-    'p1.title':    'E-Commerce Dashboard',
+    'p1.title':    'E-Commerce Analytics Dashboard',
     'p1.overview': 'Interaktivt marketing- og kundeanalyse-dashboard drevet af en Neon serverløs PostgreSQL-database. To-fane Streamlit-app: kampagne-effektivitets-KPI\'er (ROAS, CTR, CVR, CPA) med interaktive filtre og RFM-baseret kundesegmentering af 8.000+ kunder.',
     'p1.method.1': 'Designede et stjerneskema i Neon PostgreSQL med faktatabeller for marketingforbrug og kunde-RFM-scorer samt dimensionstabeller for kampagner, kanaler og kunder',
     'p1.method.2': 'Forespurgte og aggregerede data med SQL via psycopg2; behandlede resultater med pandas og numpy',

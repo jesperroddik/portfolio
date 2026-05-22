@@ -9,25 +9,6 @@ if (navbar) {
 }
 
 /* ============================================================
-   Skill bars — animate on scroll into view
-   ============================================================ */
-if ('IntersectionObserver' in window) {
-  const barObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const fill = entry.target;
-        fill.style.width = fill.dataset.width + '%';
-        barObserver.unobserve(fill);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  document.querySelectorAll('.skill-bar-fill').forEach(bar => {
-    barObserver.observe(bar);
-  });
-}
-
-/* ============================================================
    Mobile hamburger menu
    ============================================================ */
 const navToggle = document.getElementById('navToggle');
@@ -39,12 +20,19 @@ if (navToggle && navLinks) {
     navToggle.setAttribute('aria-expanded', isOpen);
   });
 
+  const closeMenu = () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
   navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', closeMenu);
   });
+
+  const langToggleBtn = document.getElementById('langToggle');
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', closeMenu);
+  }
 }
 
 /* ============================================================
