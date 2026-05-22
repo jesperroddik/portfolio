@@ -180,6 +180,25 @@ section {
   color: var(--accent);
 }
 
+.lang-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: border-color var(--transition), color var(--transition);
+  font-family: inherit;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .nav-toggle {
   display: none;
   background: none;

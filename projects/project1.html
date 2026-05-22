@@ -20,10 +20,11 @@
       <i class="fas fa-bars"></i>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html#about">About</a></li>
-      <li><a href="../index.html#skills">Skills</a></li>
-      <li><a href="../index.html#projects">Projects</a></li>
-      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="../index.html#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="../index.html#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><button class="lang-toggle" id="langToggle">DA</button></li>
     </ul>
   </nav>
 
@@ -31,12 +32,12 @@
     <div class="container">
 
       <a href="../index.html#projects" class="back-link">
-        <i class="fas fa-arrow-left"></i> Back to Projects
+        <i class="fas fa-arrow-left"></i> <span data-i18n="btn.back">Back to Projects</span>
       </a>
 
       <div class="project-hero analytics">
-        <span class="project-hero-badge"> Analytics</span>
-        <h1>E-Commerce Dashboard</h1>
+        <span class="project-hero-badge" data-i18n="p1.badge"> Analytics</span>
+        <h1 data-i18n="p1.title">E-Commerce Dashboard</h1>
         <div class="project-meta">
           <span><i class="fas fa-tools"></i> Python · SQL · Neon · Streamlit · Claude Code</span>
           <span><i class="fas fa-calendar"></i> 2026</span>
@@ -44,8 +45,8 @@
       </div>
 
       <div class="project-section">
-        <h2>Overview</h2>
-        <p>
+        <h2 data-i18n="project.overview">Overview</h2>
+        <p data-i18n="p1.overview">
           Interactive marketing and customer analytics dashboard backed by a Neon serverless PostgreSQL database.
           Two-tab Streamlit app: campaign efficiency KPIs (ROAS, CTR, CVR, CPA) with interactive filters,
           and RFM-based customer segmentation across 8,000+ customers.
@@ -53,18 +54,18 @@
       </div>
 
       <div class="project-section">
-        <h2>Methodology</h2>
+        <h2 data-i18n="project.methodology">Methodology</h2>
         <ul>
-          <li>Designed a star schema in Neon PostgreSQL with fact tables for marketing spend and customer RFM scores, and dimension tables for campaigns, channels, and customers</li>
-          <li>Queried and aggregated data with SQL via psycopg2; processed results with pandas and numpy</li>
-          <li>Built a two-tab Streamlit dashboard with multi-select filters and caching for performance</li>
-          <li>Visualized campaign ROAS, CTR vs CVR scatter, CPA by channel, and customer segment distribution using Plotly Express</li>
-          <li>Used Claude Code to accelerate schema design, query writing, and dashboard layout</li>
+          <li data-i18n="p1.method.1">Designed a star schema in Neon PostgreSQL with fact tables for marketing spend and customer RFM scores, and dimension tables for campaigns, channels, and customers</li>
+          <li data-i18n="p1.method.2">Queried and aggregated data with SQL via psycopg2; processed results with pandas and numpy</li>
+          <li data-i18n="p1.method.3">Built a two-tab Streamlit dashboard with multi-select filters and caching for performance</li>
+          <li data-i18n="p1.method.4">Visualized campaign ROAS, CTR vs CVR scatter, CPA by channel, and customer segment distribution using Plotly Express</li>
+          <li data-i18n="p1.method.5">Used Claude Code to accelerate schema design, query writing, and dashboard layout</li>
         </ul>
       </div>
 
       <div class="project-section">
-        <h2>Built With</h2>
+        <h2 data-i18n="project.built-with">Built With</h2>
         <div class="tech-stack">
           <div class="tech-item">
             <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
@@ -94,22 +95,22 @@
       </div>
 
       <div class="project-section">
-        <h2>Screenshots</h2>
+        <h2 data-i18n="project.screenshots">Screenshots</h2>
         <div class="screenshot-grid">
           <figure class="screenshot-item">
             <img src="../assets/e-commerce_dashboard/project1.1.png" alt="Campaign efficiency tab: ROAS, CTR/CVR scatter, CPA by channel" class="screenshot-img">
-            <figcaption>Campaign efficiency tab: ROAS, CTR/CVR scatter, CPA by channel</figcaption>
+            <figcaption data-i18n="p1.screenshot.1">Campaign efficiency tab: ROAS, CTR/CVR scatter, CPA by channel</figcaption>
           </figure>
           <figure class="screenshot-item">
             <img src="../assets/e-commerce_dashboard/project1.2.png" alt="Customer segmentation tab: RFM donut, frequency/value by segment, income mix" class="screenshot-img">
-            <figcaption>Customer segmentation tab: RFM donut, frequency/value by segment, income mix</figcaption>
+            <figcaption data-i18n="p1.screenshot.2">Customer segmentation tab: RFM donut, frequency/value by segment, income mix</figcaption>
           </figure>
         </div>
       </div>
 
       <div class="project-section">
-        <h2>Results</h2>
-        <p>
+        <h2 data-i18n="project.results">Results</h2>
+        <p data-i18n="p1.results">
           Identified top-performing campaign types and channels by ROAS and CPA.
           Segmented customers into Champions, Loyal, Regular, Recent, and At-Risk groups,
           revealing income bracket composition per segment to guide targeting strategy.
@@ -118,7 +119,7 @@
 
       <div class="project-section project-links">
         <a href="https://github.com/jesperroddik/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i> View on GitHub
+          <i class="fab fa-github"></i> <span data-i18n="btn.github">View on GitHub</span>
         </a>
       </div>
 
@@ -126,9 +127,10 @@
   </main>
 
   <footer>
-    <p>Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+    <p data-i18n="footer.text">Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 </html>

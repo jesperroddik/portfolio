@@ -20,10 +20,11 @@
       <i class="fas fa-bars"></i>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html#about">About</a></li>
-      <li><a href="../index.html#skills">Skills</a></li>
-      <li><a href="../index.html#projects">Projects</a></li>
-      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="../index.html#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="../index.html#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><button class="lang-toggle" id="langToggle">DA</button></li>
     </ul>
   </nav>
 
@@ -31,12 +32,12 @@
     <div class="container">
 
       <a href="../index.html#projects" class="back-link">
-        <i class="fas fa-arrow-left"></i> Back to Projects
+        <i class="fas fa-arrow-left"></i> <span data-i18n="btn.back">Back to Projects</span>
       </a>
 
       <div class="project-hero tableau">
-        <span class="project-hero-badge"> HR Analytics</span>
-        <h1>HR Analytics Dashboard</h1>
+        <span class="project-hero-badge" data-i18n="p2.badge"> HR Analytics</span>
+        <h1 data-i18n="p2.title">HR Analytics Dashboard</h1>
         <div class="project-meta">
           <span><i class="fas fa-tools"></i> Python · BigQuery · Tableau · ETL Pipeline</span>
           <span><i class="fas fa-calendar"></i> 2026</span>
@@ -44,8 +45,8 @@
       </div>
 
       <div class="project-section">
-        <h2>Overview</h2>
-        <p>
+        <h2 data-i18n="project.overview">Overview</h2>
+        <p data-i18n="p2.overview">
           End-to-end HR analytics project built on the IBM HR Analytics Employee Attrition &amp; Performance
           dataset (1,470 records, 35 features). The project covers the full data analyst workflow: ETL
           pipeline into Google BigQuery, SQL-based analysis, and two interactive Tableau dashboards that
@@ -55,27 +56,27 @@
       </div>
 
       <div class="project-section">
-        <h2>ETL Pipeline</h2>
+        <h2 data-i18n="p2.etl.title">ETL Pipeline</h2>
         <ul>
-          <li>Ingested the IBM Attrition CSV into Google BigQuery and verified row counts, column types, and nulls</li>
-          <li>Built <code>src/bq_client.py</code> to authenticate via a GCP service account and query BigQuery from Python</li>
-          <li>Wrote <code>src/etl.py</code> to extract the raw table into pandas, clean column names, cast types, handle nulls, and engineer new fields (tenure bands, income brackets, satisfaction tiers)</li>
-          <li>Loaded the transformed data back to BigQuery as <code>hr_analytics.employees_clean</code> — the single source of truth for SQL queries and Tableau</li>
+          <li data-i18n="p2.etl.1">Ingested the IBM Attrition CSV into Google BigQuery and verified row counts, column types, and nulls</li>
+          <li data-i18n-html="p2.etl.2">Built <code>src/bq_client.py</code> to authenticate via a GCP service account and query BigQuery from Python</li>
+          <li data-i18n-html="p2.etl.3">Wrote <code>src/etl.py</code> to extract the raw table into pandas, clean column names, cast types, handle nulls, and engineer new fields (tenure bands, income brackets, satisfaction tiers)</li>
+          <li data-i18n-html="p2.etl.4">Loaded the transformed data back to BigQuery as <code>hr_analytics.employees_clean</code> — the single source of truth for SQL queries and Tableau</li>
         </ul>
       </div>
 
       <div class="project-section">
-        <h2>Methodology</h2>
+        <h2 data-i18n="project.methodology">Methodology</h2>
         <ul>
-          <li>Wrote SQL queries in BigQuery covering attrition by department, job role, salary band, overtime, and promotion recency</li>
-          <li>Conducted exploratory analysis in <code>notebooks/01_eda.ipynb</code> by pulling the cleaned table into pandas and visualising distributions, correlation heatmaps, and attrition breakdowns</li>
-          <li>Connected Tableau Desktop to BigQuery via the native connector; used an Extract connection for performance and offline portability</li>
-          <li>Built a two-dashboard Tableau workbook with cross-dashboard Department filter actions and exported as a packaged <code>.twbx</code> file</li>
+          <li data-i18n="p2.method.1">Wrote SQL queries in BigQuery covering attrition by department, job role, salary band, overtime, and promotion recency</li>
+          <li data-i18n-html="p2.method.2">Conducted exploratory analysis in <code>notebooks/01_eda.ipynb</code> by pulling the cleaned table into pandas and visualising distributions, correlation heatmaps, and attrition breakdowns</li>
+          <li data-i18n="p2.method.3">Connected Tableau Desktop to BigQuery via the native connector; used an Extract connection for performance and offline portability</li>
+          <li data-i18n-html="p2.method.4">Built a two-dashboard Tableau workbook with cross-dashboard Department filter actions and exported as a packaged <code>.twbx</code> file</li>
         </ul>
       </div>
 
       <div class="project-section">
-        <h2>Built With</h2>
+        <h2 data-i18n="project.built-with">Built With</h2>
         <div class="tech-stack">
           <div class="tech-item">
             <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
@@ -101,31 +102,31 @@
       </div>
 
       <div class="project-section">
-        <h2>Dashboards</h2>
-        <p>The Tableau workbook contains two dashboards, each answering a distinct business question.</p>
+        <h2 data-i18n="p2.dashboards.title">Dashboards</h2>
+        <p data-i18n="p2.dashboards.intro">The Tableau workbook contains two dashboards, each answering a distinct business question.</p>
         <ul>
-          <li><strong>Attrition Overview:</strong> headline KPI, attrition by department and job role (with company average reference lines), and overtime vs attrition side-by-side bars. All sheets respond to a shared Department filter action.</li>
-          <li><strong>Financial Drivers of Attrition:</strong> attrition rate across income bands, promotion recency groups, and salary hike bands, with a high-performer attrition line overlaid to test whether raises retain top talent.</li>
+          <li data-i18n-html="p2.dashboards.1"><strong>Attrition Overview:</strong> headline KPI, attrition by department and job role (with company average reference lines), and overtime vs attrition side-by-side bars. All sheets respond to a shared Department filter action.</li>
+          <li data-i18n-html="p2.dashboards.2"><strong>Financial Drivers of Attrition:</strong> attrition rate across income bands, promotion recency groups, and salary hike bands, with a high-performer attrition line overlaid to test whether raises retain top talent.</li>
         </ul>
       </div>
 
       <div class="project-section">
-        <h2>Screenshots</h2>
+        <h2 data-i18n="project.screenshots">Screenshots</h2>
         <div class="screenshot-grid">
           <figure class="screenshot-item">
             <img src="../assets/hr_dashboard/hr_project2.1.png" alt="Attrition overview dashboard: KPI, attrition by department, job role, and overtime" class="screenshot-img">
-            <figcaption>Attrition overview: KPI tile, attrition by department and job role, overtime vs attrition</figcaption>
+            <figcaption data-i18n="p2.screenshot.1">Attrition overview: KPI tile, attrition by department and job role, overtime vs attrition</figcaption>
           </figure>
           <figure class="screenshot-item">
             <img src="../assets/hr_dashboard/hr_project2.2.png" alt="Financial drivers dashboard: income bands, promotion recency, salary hike bands" class="screenshot-img">
-            <figcaption>Financial drivers: attrition by income band, promotion recency, and salary hike</figcaption>
+            <figcaption data-i18n="p2.screenshot.2">Financial drivers: attrition by income band, promotion recency, and salary hike</figcaption>
           </figure>
         </div>
       </div>
 
       <div class="project-section">
-        <h2>Results</h2>
-        <p>
+        <h2 data-i18n="project.results">Results</h2>
+        <p data-i18n="p2.results">
           Employees earning below $2K/month leave at roughly 3-4x the company average.
           Overtime workers show attrition rates above 30%, versus ~10% for those who do not work overtime.
           Sales Representatives have the highest attrition of any job role at ~40%.
@@ -136,7 +137,7 @@
 
       <div class="project-section project-links">
         <a href="https://github.com/jesperroddik/portfolio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i> View on GitHub
+          <i class="fab fa-github"></i> <span data-i18n="btn.github">View on GitHub</span>
         </a>
       </div>
 
@@ -144,9 +145,10 @@
   </main>
 
   <footer>
-    <p>Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+    <p data-i18n="footer.text">Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 </html>

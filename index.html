@@ -27,12 +27,13 @@
       <i class="fas fa-bars"></i>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><button class="lang-toggle" id="langToggle">DA</button></li>
     </ul>
   </nav>
 
@@ -41,15 +42,15 @@
        ============================================================ -->
   <section id="hero">
     <div class="hero-content">
-      <p class="hero-tagline">Hi, I'm</p>
+      <p class="hero-tagline" data-i18n="hero.tagline">Hi, I'm</p>
       <h1 class="hero-name">Jesper</h1>
-      <h2 class="hero-role">Data Analyst</h2>
-      <p class="hero-sub">
+      <h2 class="hero-role" data-i18n="hero.role">Data Analyst</h2>
+      <p class="hero-sub" data-i18n="hero.sub">
         Turning raw data into clear decisions with Python, SQL, and visual storytelling.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.work">View My Work</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero.cta.contact">Get In Touch</a>
       </div>
     </div>
   </section>
@@ -59,26 +60,25 @@
        ============================================================ -->
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title" data-i18n="about.title">About</h2>
       <div class="about-grid">
         <div class="about-photo">
           <img src="assets/sh, bw.jpg" alt="Jesper">
         </div>
         <div class="about-text">
-          <p>
+          <p data-i18n="about.p1">
             I'm a data analyst with a passion for transforming messy datasets into actionable insights.
             My toolkit spans Python (pandas, numpy), SQL, Power BI, and data visualization.
           </p>
-          <p>
-            <!-- Add your personal background, education, or goals here. -->
+          <p data-i18n="about.p2">
             I enjoy finding patterns in data and communicating findings in a way that drives real decisions.
             Always looking to learn new tools and tackle interesting analytical challenges.
           </p>
           <a href="assets/JKR_CV_EN.pdf" class="btn btn-outline" download>
-            <i class="fas fa-download"></i> Download CV (English)
+            <i class="fas fa-download"></i> <span data-i18n="about.cv.en">Download CV (English)</span>
           </a>
           <a href="assets/JKR_CV_DK.pdf" class="btn btn-outline" download>
-            <i class="fas fa-download"></i> Download CV (Danish)
+            <i class="fas fa-download"></i> <span data-i18n="about.cv.dk">Download CV (Danish)</span>
           </a>
         </div>
       </div>
@@ -90,7 +90,7 @@
        ============================================================ -->
   <section id="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title" data-i18n="skills.title">Skills</h2>
 
       <!-- Skill icon cards -->
       <div class="skill-cards">
@@ -106,13 +106,13 @@
         </div>
         <div class="skill-card">
           <i class="fas fa-chart-line skill-icon"></i>
-          <span>Data Visualization</span>
+          <span data-i18n="skills.dataviz">Data Visualization</span>
           <small>Power BI · Tableau · Streamlit</small>
         </div>
         <div class="skill-card">
           <i class="fas fa-table skill-icon"></i>
           <span>Excel &amp; Spreadsheets</span>
-          <small>pivot tables · Power Query · reporting</small>
+          <small data-i18n="skills.excel.sub">pivot tables · Power Query · reporting</small>
         </div>
       </div>
 
@@ -125,7 +125,7 @@
        ============================================================ -->
   <section id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title" data-i18n="projects.title">Projects</h2>
       <div class="projects-grid">
 
         <!-- Project 1: E-Commerce Analytics Dashboard -->
@@ -136,11 +136,11 @@
           <div class="project-card-body">
             <span class="project-tag">Python · PostgreSQL · Streamlit · Neon</span>
             <h3>E-Commerce Analytics Dashboard</h3>
-            <p>
+            <p data-i18n="projects.p1.desc">
               Interactive marketing and customer analytics dashboard with campaign
               KPIs (ROAS, CTR, CPA) and RFM-based segmentation across 8,000+ customers.
             </p>
-            <a href="projects/project1.html" class="btn btn-sm btn-outline">View Project</a>
+            <a href="projects/project1.html" class="btn btn-sm btn-outline" data-i18n="btn.view-project">View Project</a>
           </div>
         </article>
 
@@ -152,11 +152,11 @@
           <div class="project-card-body">
             <span class="project-tag">Python · BigQuery · Tableau · ETL</span>
             <h3>HR Analytics Dashboard</h3>
-            <p>
+            <p data-i18n="projects.p2.desc">
               End-to-end HR analytics pipeline: ETL into Google BigQuery, SQL analysis,
               and two Tableau dashboards identifying employee attrition drivers.
             </p>
-            <a href="projects/project2.html" class="btn btn-sm btn-outline">View Project</a>
+            <a href="projects/project2.html" class="btn btn-sm btn-outline" data-i18n="btn.view-project">View Project</a>
           </div>
         </article>
 
@@ -168,8 +168,8 @@
           <div class="project-card-body">
             <span class="project-tag">Power BI · DAX</span>
             <h3>KPI Performance Dashboard</h3>
-            <p>Coming soon.</p>
-            <span class="btn btn-sm btn-outline" style="opacity:0.45;cursor:default;">Coming Soon</span>
+            <p data-i18n="projects.p3.desc">Coming soon.</p>
+            <span class="btn btn-sm btn-outline" style="opacity:0.45;cursor:default;" data-i18n="btn.coming-soon">Coming Soon</span>
           </div>
         </article>
 
@@ -182,7 +182,7 @@
        ============================================================ -->
   <section id="certificates">
     <div class="container">
-      <h2 class="section-title">Certificates</h2>
+      <h2 class="section-title" data-i18n="certs.title">Certificates</h2>
       <div class="certificates-grid">
 
         <!-- Kaggle Python -->
@@ -191,10 +191,10 @@
             <img src="assets/certificates/Jesper%20Roddik%20-%20Python.png" alt="Kaggle Python certificate">
           </a>
           <div class="cert-card-body">
-            <span class="cert-tag">Kaggle &middot; June 2023</span>
+            <span class="cert-tag" data-i18n="certs.tag.python">Kaggle &middot; June 2023</span>
             <h3>Python</h3>
             <a href="assets/certificates/Jesper%20Roddik%20-%20Python.png" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-external-link-alt"></i> View Certificate
+              <i class="fas fa-external-link-alt"></i> <span data-i18n="btn.view-cert">View Certificate</span>
             </a>
           </div>
         </article>
@@ -205,10 +205,10 @@
             <img src="assets/certificates/Jesper%20Roddik%20-%20Pandas.png" alt="Kaggle Pandas certificate">
           </a>
           <div class="cert-card-body">
-            <span class="cert-tag">Kaggle &middot; July 2023</span>
+            <span class="cert-tag" data-i18n="certs.tag.pandas">Kaggle &middot; July 2023</span>
             <h3>Pandas</h3>
             <a href="assets/certificates/Jesper%20Roddik%20-%20Pandas.png" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-external-link-alt"></i> View Certificate
+              <i class="fas fa-external-link-alt"></i> <span data-i18n="btn.view-cert">View Certificate</span>
             </a>
           </div>
         </article>
@@ -219,10 +219,10 @@
             <i class="fas fa-robot"></i>
           </a>
           <div class="cert-card-body">
-            <span class="cert-tag">Ricardo Vargas &middot; June 2024</span>
+            <span class="cert-tag" data-i18n="certs.tag.ai-pm">Ricardo Vargas &middot; June 2024</span>
             <h3>AI in Project Management Masterclass</h3>
             <a href="assets/certificates/AI%20in%20Project%20Management%20Masterclass%2C%20certificate.pdf" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-file-pdf"></i> View Certificate
+              <i class="fas fa-file-pdf"></i> <span data-i18n="btn.view-cert">View Certificate</span>
             </a>
           </div>
         </article>
@@ -233,10 +233,10 @@
             <i class="fab fa-python"></i>
           </a>
           <div class="cert-card-body">
-            <span class="cert-tag">Teknologisk Institut &middot; May 2025</span>
+            <span class="cert-tag" data-i18n="certs.tag.py-ai">Teknologisk Institut &middot; May 2025</span>
             <h3>Python &amp; AI</h3>
             <a href="assets/certificates/Python%20og%20AI%20Certifikat.pdf" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-file-pdf"></i> View Certificate
+              <i class="fas fa-file-pdf"></i> <span data-i18n="btn.view-cert">View Certificate</span>
             </a>
           </div>
         </article>
@@ -250,8 +250,8 @@
        ============================================================ -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="contact-sub">Open to opportunities and collaborations. Feel free to reach out.</p>
+      <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+      <p class="contact-sub" data-i18n="contact.sub">Open to opportunities and collaborations. Feel free to reach out.</p>
       <div class="contact-links">
         <a href="mailto:jesperroddik@gmail.com" class="contact-link">
           <i class="fas fa-envelope"></i>
@@ -278,9 +278,10 @@
        Footer
        ============================================================ -->
   <footer>
-    <p>Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+    <p data-i18n="footer.text">Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

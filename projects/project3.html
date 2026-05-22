@@ -20,10 +20,11 @@
       <i class="fas fa-bars"></i>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html#about">About</a></li>
-      <li><a href="../index.html#skills">Skills</a></li>
-      <li><a href="../index.html#projects">Projects</a></li>
-      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="../index.html#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="../index.html#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><button class="lang-toggle" id="langToggle">DA</button></li>
     </ul>
   </nav>
 
@@ -31,7 +32,7 @@
     <div class="container">
 
       <a href="../index.html#projects" class="back-link">
-        <i class="fas fa-arrow-left"></i> Back to Projects
+        <i class="fas fa-arrow-left"></i> <span data-i18n="btn.back">Back to Projects</span>
       </a>
 
       <div class="project-hero powerbi">
@@ -45,17 +46,18 @@
 
       <div class="project-section" style="text-align:center;padding:4rem 0;">
         <i class="fas fa-hammer" style="font-size:3rem;opacity:0.3;margin-bottom:1rem;display:block;"></i>
-        <h2>Coming Soon</h2>
-        <p>This project is currently in progress. Check back soon.</p>
+        <h2 data-i18n="p3.coming-soon">Coming Soon</h2>
+        <p data-i18n="p3.message">This project is currently in progress. Check back soon.</p>
       </div>
 
     </div>
   </main>
 
   <footer>
-    <p>Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+    <p data-i18n="footer.text">Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
   </footer>
 
+  <script src="../translations.js"></script>
   <script src="../script.js"></script>
 </body>
 </html>
