@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KPI Performance Dashboard: Power BI project by Jesper — coming soon">
-  <title>KPI Performance Dashboard | Jesper</title>
+  <meta name="description" content="Contoso Sales Dashboard: Power BI project by Jesper — multi-page sales analytics with DAX, Power Query, and a 2014 forecast.">
+  <title>Contoso Sales Dashboard | Jesper</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Contoso Sales Dashboard | Jesper">
+  <meta property="og:description" content="Multi-page Power BI dashboard on $8.34bn of Contoso retail sales: product mix, geography, YoY trends, and a 2014 DAX forecast.">
+  <meta property="og:image"       content="../assets/contoso_powerbi_dash/p3_overview.png">
+  <meta property="og:url"         content="">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,18 +46,104 @@
       </a>
 
       <div class="project-hero powerbi">
-        <span class="project-hero-badge">Power BI</span>
-        <h1>KPI Performance Dashboard</h1>
+        <span class="project-hero-badge" data-i18n="p3.badge">Power BI</span>
+        <h1 data-i18n="p3.title">Contoso Sales Dashboard</h1>
         <div class="project-meta">
           <span><i class="fas fa-tools"></i> Power BI · DAX · Power Query</span>
           <span><i class="fas fa-calendar"></i> 2026</span>
         </div>
       </div>
 
-      <div class="project-section" style="text-align:center;padding:4rem 0;">
-        <i class="fas fa-hammer" style="font-size:3rem;opacity:0.3;margin-bottom:1rem;display:block;"></i>
-        <h2 data-i18n="p3.coming-soon">Coming Soon</h2>
-        <p data-i18n="p3.message">This project is currently in progress. Check back soon.</p>
+      <div class="project-section">
+        <h2 data-i18n="project.overview">Overview</h2>
+        <p data-i18n="p3.overview">
+          Multi-page Power BI dashboard built on the Contoso retail dataset, covering $8.34bn in global
+          sales across 6 product categories, 306 stores, and dozens of countries from 2005 to 2013.
+          The report spans four pages: a sales overview with year-on-year comparison, a product breakdown
+          with margin analysis, a geographic view with a world map, and a 2014 sales forecast with
+          DAX time-intelligence and confidence intervals.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.methodology">Methodology</h2>
+        <ul>
+          <li data-i18n="p3.method.1">Imported the Contoso retail tables into Power BI Desktop and defined relationships between fact and dimension tables in the model view</li>
+          <li data-i18n="p3.method.2">Used Power Query to clean and reshape raw tables — standardised column names, resolved data-type issues, and merged lookup tables</li>
+          <li data-i18n="p3.method.3">Wrote DAX measures for Total Sales, Gross Margin, Margin %, Total Sales Previous Year, and YoY % using CALCULATE and time-intelligence functions</li>
+          <li data-i18n="p3.method.4">Built cross-page slicers for Year, Country, and Product Category so filters carry through all four report pages</li>
+          <li data-i18n="p3.method.5">Created the 2014 forecast page using DAX FORECAST.ETS-equivalent logic with upper and lower confidence interval measures overlaid on the historical trend</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.built-with">Built With</h2>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI">
+            <span>Power BI</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="DAX">
+            <span>DAX</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://img.icons8.com/color/48/microsoft-power-query--v1.png" alt="Power Query">
+            <span>Power Query</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="p3.pages.title">Report Pages</h2>
+        <ul>
+          <li data-i18n-html="p3.pages.1"><strong>Sales Overview:</strong> KPI cards for Total Sales ($8.34bn), YoY %, and Total Orders (2M). Monthly area chart comparing current-year sales to the prior year, sliceable by Year, Country, and Product Category.</li>
+          <li data-i18n-html="p3.pages.2"><strong>Product Breakdown:</strong> Gross Margin ($4.79bn) and Margin % (57.41%) KPIs, treemap and horizontal bar chart by product category, and a detailed table with per-category margin data.</li>
+          <li data-i18n-html="p3.pages.3"><strong>Geographic View:</strong> World map visual with bubble sizing by sales volume, KPI cards for Total Stores (306) and Sales per Store ($27.26M), and a continental breakdown table.</li>
+          <li data-i18n-html="p3.pages.4"><strong>Sales Forecast:</strong> DAX-driven 2014 projection ($2.18bn, −14.5% YoY) with confidence intervals overlaid on the 2011–2013 historical trend, plus a forecast breakdown by product category.</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.screenshots">Screenshots</h2>
+        <div class="screenshot-grid">
+          <figure class="screenshot-item">
+            <img src="../assets/contoso_powerbi_dash/p3_overview.png" alt="Sales Overview page: Total Sales KPI, YoY %, Total Orders, and monthly sales vs prior year" class="screenshot-img">
+            <figcaption data-i18n="p3.screenshot.1">Sales Overview: Total Sales, YoY %, Total Orders, and monthly sales vs. prior year</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img src="../assets/contoso_powerbi_dash/p3_products.png" alt="Product Breakdown: Gross Margin, Margin %, treemap, bar chart, and margin table by product category" class="screenshot-img">
+            <figcaption data-i18n="p3.screenshot.2">Product Breakdown: Gross Margin, Margin %, treemap and bar chart by category</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img src="../assets/contoso_powerbi_dash/p3_geo.png" alt="Geographic View: world map, Total Stores 306, Sales per Store $27.26M, continental breakdown" class="screenshot-img">
+            <figcaption data-i18n="p3.screenshot.3">Geographic View: world map, store count, and sales per store by continent</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img src="../assets/contoso_powerbi_dash/p3_forecast.png" alt="Sales Forecast: 2014 projection with confidence intervals and breakdown by product category" class="screenshot-img">
+            <figcaption data-i18n="p3.screenshot.4">Sales Forecast: 2014 DAX projection with confidence intervals by product category</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.results">Results</h2>
+        <p data-i18n="p3.results">
+          Computers are the top-selling category at $3.2bn (38% of total) with a 56.87% gross margin.
+          Cameras and camcorders deliver the highest margin at ~60%, despite lower volume.
+          The geographic view shows sales concentrated in a handful of high-performing regions,
+          while the DAX forecast projects a 14.5% decline in 2014 sales, flagging a need for
+          product mix or market expansion decisions.
+        </p>
+      </div>
+
+      <div class="project-section project-links">
+        <a href="../assets/contoso_powerbi_dash/contoso_sales_dashboard.pbix" class="btn btn-primary" download>
+          <i class="fas fa-download"></i> <span data-i18n="p3.btn.download">Download .pbix File</span>
+        </a>
+        <a href="https://github.com/jesperroddik/portfolio" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <span data-i18n="btn.github">View on GitHub</span>
+        </a>
       </div>
 
     </div>

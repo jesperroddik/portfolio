@@ -32,7 +32,7 @@ const translations = {
     'projects.title':  'Projects',
     'projects.p1.desc': 'Interactive marketing and customer analytics dashboard with campaign KPIs (ROAS, CTR, CPA) and RFM-based segmentation across 8,000+ customers.',
     'projects.p2.desc': 'End-to-end HR analytics pipeline: ETL into Google BigQuery, SQL analysis, and two Tableau dashboards identifying employee attrition drivers.',
-    'projects.p3.desc': 'Coming soon.',
+    'projects.p3.desc': 'Multi-page Power BI dashboard on $8.34bn of Contoso retail sales: product mix, geography, YoY trends, and a 2014 DAX forecast.',
 
     // Buttons (shared)
     'btn.view-project':  'View Project',
@@ -97,8 +97,25 @@ const translations = {
     'p2.results':  'Employees earning below $2K/month leave at roughly 3-4x the company average. Overtime workers show attrition rates above 30%, versus ~10% for those who do not work overtime. Sales Representatives have the highest attrition of any job role at ~40%. Career stagnation is a clear risk signal: attrition climbs steeply for employees 10+ years without a promotion, while income level proves a stronger predictor of leaving than raise percentage alone.',
 
     // Project 3
-    'p3.coming-soon': 'Coming Soon',
-    'p3.message':     'This project is currently in progress. Check back soon.',
+    'p3.badge':    'Power BI',
+    'p3.title':    'Contoso Sales Dashboard',
+    'p3.overview': 'Multi-page Power BI dashboard built on the Contoso retail dataset, covering $8.34bn in global sales across 6 product categories, 306 stores, and dozens of countries from 2005 to 2013. The report spans four pages: a sales overview with year-on-year comparison, a product breakdown with margin analysis, a geographic view with a world map, and a 2014 sales forecast with DAX time-intelligence and confidence intervals.',
+    'p3.method.1': 'Imported the Contoso retail tables into Power BI Desktop and defined relationships between fact and dimension tables in the model view',
+    'p3.method.2': 'Used Power Query to clean and reshape raw tables — standardised column names, resolved data-type issues, and merged lookup tables',
+    'p3.method.3': 'Wrote DAX measures for Total Sales, Gross Margin, Margin %, Total Sales Previous Year, and YoY % using CALCULATE and time-intelligence functions',
+    'p3.method.4': 'Built cross-page slicers for Year, Country, and Product Category so filters carry through all four report pages',
+    'p3.method.5': 'Created the 2014 forecast page using DAX forecast logic with upper and lower confidence interval measures overlaid on the historical trend',
+    'p3.pages.title': 'Report Pages',
+    'p3.pages.1': '<strong>Sales Overview:</strong> KPI cards for Total Sales ($8.34bn), YoY %, and Total Orders (2M). Monthly area chart comparing current-year sales to the prior year, sliceable by Year, Country, and Product Category.',
+    'p3.pages.2': '<strong>Product Breakdown:</strong> Gross Margin ($4.79bn) and Margin % (57.41%) KPIs, treemap and horizontal bar chart by product category, and a detailed table with per-category margin data.',
+    'p3.pages.3': '<strong>Geographic View:</strong> World map visual with bubble sizing by sales volume, KPI cards for Total Stores (306) and Sales per Store ($27.26M), and a continental breakdown table.',
+    'p3.pages.4': '<strong>Sales Forecast:</strong> DAX-driven 2014 projection ($2.18bn, −14.5% YoY) with confidence intervals overlaid on the 2011–2013 historical trend, plus a forecast breakdown by product category.',
+    'p3.screenshot.1': 'Sales Overview: Total Sales, YoY %, Total Orders, and monthly sales vs. prior year',
+    'p3.screenshot.2': 'Product Breakdown: Gross Margin, Margin %, treemap and bar chart by category',
+    'p3.screenshot.3': 'Geographic View: world map, store count, and sales per store by continent',
+    'p3.screenshot.4': 'Sales Forecast: 2014 DAX projection with confidence intervals by product category',
+    'p3.results':  'Computers are the top-selling category at $3.2bn (38% of total) with a 56.87% gross margin. Cameras and camcorders deliver the highest margin at ~60%, despite lower volume. The geographic view shows sales concentrated in a handful of high-performing regions, while the DAX forecast projects a 14.5% decline in 2014 sales, flagging a need for product mix or market expansion decisions.',
+    'p3.btn.download': 'Download .pbix File',
   },
 
   da: {
@@ -134,7 +151,7 @@ const translations = {
     'projects.title':   'Projekter',
     'projects.p1.desc': 'Interaktivt marketing- og kundeanalyse-dashboard med kampagne-KPI\'er (ROAS, CTR, CPA) og RFM-baseret segmentering af 8.000+ kunder.',
     'projects.p2.desc': 'End-to-end HR-analyseproces: ETL til Google BigQuery, SQL-analyse og to Tableau-dashboards, der identificerer drivkræfter bag medarbejderfrafald.',
-    'projects.p3.desc': 'Kommer snart.',
+    'projects.p3.desc': 'Flersides Power BI-dashboard over $8,34 mia. i Contoso-detailsalg: produktmix, geografi, ÅtÅ-tendenser og en 2014 DAX-prognose.',
 
     // Buttons (shared)
     'btn.view-project': 'Se projekt',
@@ -199,8 +216,25 @@ const translations = {
     'p2.results':  'Medarbejdere, der tjener under $2K/måned, forlader virksomheden med omtrent 3–4 gange virksomhedsgennemsnittet. Overarbejdende medarbejdere viser frafaldsrater over 30 %, mod ~10 % for dem, der ikke arbejder overarbejde. Salgsrepræsentanter har den højeste frafald af alle jobroller med ~40 %. Karrierestagnation er et klart risikosignal: frafald stiger kraftigt for medarbejdere uden forfremmelse i 10+ år, mens indkomstniveauet er en stærkere forudsigelse for at forlade end lønforhøjelsesprocenten alene.',
 
     // Project 3
-    'p3.coming-soon': 'Kommer snart',
-    'p3.message':     'Dette projekt er i gang. Kig forbi snart.',
+    'p3.badge':    'Power BI',
+    'p3.title':    'Contoso Sales Dashboard',
+    'p3.overview': 'Flersides Power BI-dashboard bygget på Contoso-detaildatasættet, der dækker $8,34 mia. i globalt salg på tværs af 6 produktkategorier, 306 butikker og snesevis af lande fra 2005 til 2013. Rapporten spænder over fire sider: en salgsoversigt med år-til-år-sammenligning, en produktopdeling med marginsanalyse, en geografisk visning med et verdenskort og en 2014-salgsprognose med DAX-tidsintelligens og konfidensintervaller.',
+    'p3.method.1': 'Importerede Contoso-detailtabeller i Power BI Desktop og definerede relationer mellem fakta- og dimensionstabeller i modelvisningen',
+    'p3.method.2': 'Brugte Power Query til at rense og omforme råtabeller — standardiserede kolonnenavne, løste datatypeproblemer og fusionerede opslagstabeller',
+    'p3.method.3': 'Skrev DAX-målinger for Samlet salg, Bruttomargin, Margin %, Samlet salg foregående år og ÅtÅ % med CALCULATE og tidsintelligens-funktioner',
+    'p3.method.4': 'Byggede tværgående sideskærere for År, Land og Produktkategori, så filtre gælder på alle fire rapportsider',
+    'p3.method.5': 'Oprettede 2014-prognosesiden med DAX-prognoselogik med øvre og nedre konfidensinterval-målinger lagt over den historiske trend',
+    'p3.pages.title': 'Rapportsider',
+    'p3.pages.1': '<strong>Salgsoversigt:</strong> KPI-kort for Samlet salg ($8,34 mia.), ÅtÅ % og Samlede ordrer (2M). Månedligt arealdiagram der sammenligner nuværende års salg med foregående år, filtrerbart på År, Land og Produktkategori.',
+    'p3.pages.2': '<strong>Produktopdeling:</strong> Bruttomargin ($4,79 mia.) og Margin % (57,41 %) KPI\'er, treemap og vandret søjlediagram pr. produktkategori og en detaljeret tabel med marginstdata pr. kategori.',
+    'p3.pages.3': '<strong>Geografisk visning:</strong> Verdenskortvisual med boblestørrelse efter salgsvolumen, KPI-kort for Samlede butikker (306) og Salg pr. butik ($27,26M) og en kontinental opdelingstore.',
+    'p3.pages.4': '<strong>Salgsprognose:</strong> DAX-drevet 2014-projektion ($2,18 mia., −14,5 % ÅtÅ) med konfidensintervaller lagt over den historiske 2011–2013-trend, plus en prognose opdelt pr. produktkategori.',
+    'p3.screenshot.1': 'Salgsoversigt: Samlet salg, ÅtÅ %, Samlede ordrer og månedligt salg vs. foregående år',
+    'p3.screenshot.2': 'Produktopdeling: Bruttomargin, Margin %, treemap og søjlediagram pr. kategori',
+    'p3.screenshot.3': 'Geografisk visning: verdenskort, butiksantal og salg pr. butik pr. kontinent',
+    'p3.screenshot.4': 'Salgsprognose: 2014 DAX-projektion med konfidensintervaller pr. produktkategori',
+    'p3.results':  'Computere er den bedst sælgende kategori med $3,2 mia. (38 % af total) og en bruttomargin på 56,87 %. Kameraer og videokameraer leverer den højeste margin på ~60 %, på trods af lavere volumen. Den geografiske visning viser salg koncentreret i en håndfuld højtydende regioner, mens DAX-prognosen forventer et fald på 14,5 % i 2014-salg, hvilket indikerer behov for produktmix- eller markedsudvidelsestiltag.',
+    'p3.btn.download': 'Download .pbix-fil',
   }
 };
 
