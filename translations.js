@@ -116,6 +116,44 @@ const translations = {
     'p3.screenshot.4': 'Sales Forecast: 2014 DAX projection with confidence intervals by product category',
     'p3.results':  'Computers are the top-selling category at $3.2bn (38% of total) with a 56.87% gross margin. Cameras and camcorders deliver the highest margin at ~60%, despite lower volume. The geographic view shows sales concentrated in a handful of high-performing regions, while the DAX forecast projects a 14.5% decline in 2014 sales, flagging a need for product mix or market expansion decisions.',
     'p3.btn.download': 'Download .pbix File',
+
+    // Project page shared (coming soon)
+    'project.coming-soon':      'Coming Soon',
+    'project.planned-features': 'Planned Features',
+    'placeholder.screenshot':   'Screenshots coming soon',
+
+    // Project 4
+    'p4.badge':          'Machine Learning',
+    'p4.title':          'Customer Churn Prediction',
+    'projects.p4.desc':  'Machine learning pipeline to predict customer churn using scikit-learn and XGBoost, with SHAP-based feature explainability.',
+    'p4.overview':       'This project is currently in development. It will feature a full machine learning pipeline for predicting customer churn — from exploratory data analysis and feature engineering through model training, hyperparameter tuning, and SHAP-based explainability.',
+    'p4.plan.1':         'Exploratory data analysis and feature engineering on a real-world churn dataset',
+    'p4.plan.2':         'Baseline model comparison: Logistic Regression, Random Forest, and XGBoost',
+    'p4.plan.3':         'Hyperparameter tuning with cross-validation and ROC-AUC evaluation',
+    'p4.plan.4':         'SHAP values for global and per-customer feature importance explanations',
+    'p4.plan.5':         'Interactive prediction interface built with Streamlit',
+
+    // Project 5
+    'p5.badge':          'Data Engineering',
+    'p5.title':          'Automated Data Pipeline',
+    'projects.p5.desc':  'End-to-end data pipeline with dbt transformations, automated scheduling, and data quality monitoring.',
+    'p5.overview':       'This project is currently in development. It will demonstrate a production-style data pipeline — ingesting raw data, applying dbt transformations with documented lineage, and orchestrating the entire workflow with Apache Airflow and automated data quality checks.',
+    'p5.plan.1':         'Raw data ingestion from multiple sources into a PostgreSQL data warehouse',
+    'p5.plan.2':         'dbt models for staging, intermediate, and mart layers with full lineage documentation',
+    'p5.plan.3':         'Data quality tests using dbt\'s built-in test framework (not null, unique, referential integrity)',
+    'p5.plan.4':         'Airflow DAG for end-to-end orchestration with retry logic and alerting',
+    'p5.plan.5':         'BI dashboard connected to the mart layer for real-time reporting',
+
+    // Project 6
+    'p6.badge':          'NLP',
+    'p6.title':          'Sentiment Analysis Dashboard',
+    'projects.p6.desc':  'Real-time sentiment analysis on social media text using transformer models, with an interactive Streamlit dashboard.',
+    'p6.overview':       'This project is currently in development. It will apply natural language processing to classify sentiment in text data — using a pre-trained transformer model from Hugging Face — and present the results in an interactive Streamlit dashboard with trend analysis and topic breakdown.',
+    'p6.plan.1':         'Data collection and preprocessing pipeline for text data',
+    'p6.plan.2':         'Sentiment classification using a fine-tuned Hugging Face transformer model',
+    'p6.plan.3':         'Topic modelling to identify recurring themes across positive and negative segments',
+    'p6.plan.4':         'Time-series sentiment trend charts and keyword frequency analysis',
+    'p6.plan.5':         'Interactive Streamlit dashboard with search, filtering, and export functionality',
   },
 
   da: {
@@ -235,6 +273,44 @@ const translations = {
     'p3.screenshot.4': 'Salgsprognose: 2014 DAX-projektion med konfidensintervaller pr. produktkategori',
     'p3.results':  'Computere er den bedst sælgende kategori med $3,2 mia. (38 % af total) og en bruttomargin på 56,87 %. Kameraer og videokameraer leverer den højeste margin på ~60 %, på trods af lavere volumen. Den geografiske visning viser salg koncentreret i en håndfuld højtydende regioner, mens DAX-prognosen forventer et fald på 14,5 % i 2014-salg, hvilket indikerer behov for produktmix- eller markedsudvidelsestiltag.',
     'p3.btn.download': 'Download .pbix-fil',
+
+    // Project page shared (coming soon)
+    'project.coming-soon':      'Kommer snart',
+    'project.planned-features': 'Planlagte funktioner',
+    'placeholder.screenshot':   'Skærmbilleder kommer snart',
+
+    // Project 4
+    'p4.badge':          'Maskinlæring',
+    'p4.title':          'Forudsigelse af kundefrafald',
+    'projects.p4.desc':  'Maskinlærings-pipeline til at forudsige kundefrafald med scikit-learn og XGBoost samt SHAP-baseret forklarbarhed.',
+    'p4.overview':       'Dette projekt er i øjeblikket under udvikling. Det vil indeholde en komplet maskinlærings-pipeline til forudsigelse af kundefrafald — fra eksplorativ dataanalyse og feature engineering til modeltræning, hyperparametertunning og SHAP-baseret forklarbarhed.',
+    'p4.plan.1':         'Eksplorativ dataanalyse og feature engineering på et virkelighedsnært frafaldsdatasæt',
+    'p4.plan.2':         'Sammenligning af baseline-modeller: Logistisk regression, Random Forest og XGBoost',
+    'p4.plan.3':         'Hyperparametertunning med krydsvalidering og ROC-AUC-evaluering',
+    'p4.plan.4':         'SHAP-værdier for global og per-kunde feature importance-forklaring',
+    'p4.plan.5':         'Interaktiv prædiktionsgrænseflade bygget med Streamlit',
+
+    // Project 5
+    'p5.badge':          'Dataingeniørarbejde',
+    'p5.title':          'Automatiseret datapipeline',
+    'projects.p5.desc':  'End-to-end datapipeline med dbt-transformationer, automatisk planlægning og datakvalitetsovervågning.',
+    'p5.overview':       'Dette projekt er i øjeblikket under udvikling. Det vil demonstrere en produktionslignende datapipeline — indtagelse af rådata, anvendelse af dbt-transformationer med dokumenteret afstamning og orkestrering af hele arbejdsgangen med Apache Airflow og automatiske datakvalitetstjek.',
+    'p5.plan.1':         'Rådata-indtagelse fra flere kilder til et PostgreSQL-datavarehus',
+    'p5.plan.2':         'dbt-modeller til staging-, mellemliggende og mart-lag med fuld afstamningsdokumentation',
+    'p5.plan.3':         'Datakvalitetstests med dbt\'s indbyggede testframework (not null, unique, referentiel integritet)',
+    'p5.plan.4':         'Airflow DAG til end-to-end-orkestrering med retry-logik og advarsler',
+    'p5.plan.5':         'BI-dashboard tilsluttet mart-laget til realtidsrapportering',
+
+    // Project 6
+    'p6.badge':          'NLP',
+    'p6.title':          'Sentimentanalyse-dashboard',
+    'projects.p6.desc':  'Realtids-sentimentanalyse af tekst ved hjælp af transformer-modeller med et interaktivt Streamlit-dashboard.',
+    'p6.overview':       'Dette projekt er i øjeblikket under udvikling. Det vil anvende naturlig sprogbehandling til at klassificere sentiment i tekstdata — ved hjælp af en forudtrænet transformer-model fra Hugging Face — og præsentere resultaterne i et interaktivt Streamlit-dashboard med trendanalyse og emne-opdeling.',
+    'p6.plan.1':         'Dataindsamlings- og forbehandlings-pipeline til tekstdata',
+    'p6.plan.2':         'Sentimentklassificering med en finjusteret Hugging Face transformer-model',
+    'p6.plan.3':         'Emnemodellering til at identificere tilbagevendende temaer på tværs af positive og negative segmenter',
+    'p6.plan.4':         'Tidsseriens sentimenttrenddiagrammer og nøgleordsfrekvensanalyse',
+    'p6.plan.5':         'Interaktivt Streamlit-dashboard med søge-, filter- og eksportfunktionalitet',
   }
 };
 

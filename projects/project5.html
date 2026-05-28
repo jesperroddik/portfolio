@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Automated Data Pipeline: Python, SQL, dbt, Airflow project by Jesper — Coming Soon">
+  <title>Automated Data Pipeline | Jesper</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Automated Data Pipeline | Jesper">
+  <meta property="og:description" content="End-to-end data pipeline with dbt transformations, automated scheduling, and data quality monitoring.">
+  <meta property="og:url"         content="">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a class="nav-brand" href="../index.html">JR<span class="accent">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="../index.html#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="../index.html#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+      <li><button class="lang-toggle" id="langToggle">DA</button></li>
+    </ul>
+  </nav>
+
+  <main class="project-page">
+    <div class="container">
+
+      <a href="../index.html#projects" class="back-link">
+        <i class="fas fa-arrow-left"></i> <span data-i18n="btn.back">Back to Projects</span>
+      </a>
+
+      <div class="project-hero sql">
+        <span class="project-hero-badge" data-i18n="p5.badge">Data Engineering</span>
+        <h1 data-i18n="p5.title">Automated Data Pipeline</h1>
+        <div class="project-meta">
+          <span><i class="fas fa-tools"></i> Python · SQL · dbt · Apache Airflow · PostgreSQL</span>
+          <span><i class="fas fa-calendar"></i> 2026</span>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.coming-soon">Coming Soon</h2>
+        <p data-i18n="p5.overview">
+          This project is currently in development. It will demonstrate a production-style
+          data pipeline — ingesting raw data, applying dbt transformations with documented
+          lineage, and orchestrating the entire workflow with Apache Airflow and automated
+          data quality checks.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.planned-features">Planned Features</h2>
+        <ul>
+          <li data-i18n="p5.plan.1">Raw data ingestion from multiple sources into a PostgreSQL data warehouse</li>
+          <li data-i18n="p5.plan.2">dbt models for staging, intermediate, and mart layers with full lineage documentation</li>
+          <li data-i18n="p5.plan.3">Data quality tests using dbt's built-in test framework (not null, unique, referential integrity)</li>
+          <li data-i18n="p5.plan.4">Airflow DAG for end-to-end orchestration with retry logic and alerting</li>
+          <li data-i18n="p5.plan.5">BI dashboard connected to the mart layer for real-time reporting</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.built-with">Built With</h2>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL">
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/dbt/FF694B" alt="dbt">
+            <span>dbt</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/apacheairflow/017CEE" alt="Apache Airflow">
+            <span>Airflow</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas">
+            <span>pandas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="project.screenshots">Screenshots</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot-placeholder">
+            <i class="fas fa-image"></i>
+            <span data-i18n="placeholder.screenshot">Screenshots coming soon</span>
+          </div>
+          <div class="screenshot-placeholder">
+            <i class="fas fa-image"></i>
+            <span data-i18n="placeholder.screenshot">Screenshots coming soon</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p data-i18n="footer.text">Jesper &copy; 2026 &middot; Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="../translations.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
