@@ -879,6 +879,11 @@ footer {
   color: #ffd43b;
 }
 
+.cert-card-header.cert-datacamp {
+  background: linear-gradient(135deg, rgba(3, 239, 98, 0.15), rgba(3, 239, 98, 0.04));
+  color: #03ef62;
+}
+
 .cert-card-body {
   padding: 1.25rem 1.5rem 1.5rem;
   display: flex;

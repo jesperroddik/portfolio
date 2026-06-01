@@ -46,7 +46,8 @@ const translations = {
     'certs.tag.python':  'Kaggle · June 2023',
     'certs.tag.pandas':  'Kaggle · July 2023',
     'certs.tag.ai-pm':   'Ricardo Vargas · June 2024',
-    'certs.tag.py-ai':   'Teknologisk Institut · May 2025',
+    'certs.tag.py-ai':         'Teknologisk Institut · May 2025',
+    'certs.tag.datacamp-ada': 'DataCamp · June 2026',
 
     // Contact
     'contact.title': 'Contact',
@@ -203,7 +204,8 @@ const translations = {
     'certs.tag.python': 'Kaggle · Juni 2023',
     'certs.tag.pandas': 'Kaggle · Juli 2023',
     'certs.tag.ai-pm':  'Ricardo Vargas · Juni 2024',
-    'certs.tag.py-ai':  'Teknologisk Institut · Maj 2025',
+    'certs.tag.py-ai':        'Teknologisk Institut · Maj 2025',
+    'certs.tag.datacamp-ada': 'DataCamp · Juni 2026',
 
     // Contact
     'contact.title': 'Kontakt',
