@@ -457,6 +457,11 @@ section {
   color: #f2c811;
 }
 
+.project-card-header.placeholder {
+  background: var(--surface-2);
+  min-height: 6.5rem;
+}
+
 .project-card-body {
   padding: 1.5rem;
 }

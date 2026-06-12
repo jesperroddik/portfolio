@@ -123,6 +123,10 @@ const translations = {
     'project.planned-features': 'Planned Features',
     'placeholder.screenshot':   'Screenshots coming soon',
 
+    // Generic placeholder project tiles
+    'projects.placeholder.title': 'Coming Soon',
+    'projects.placeholder.desc':  'A new project is in the works. Check back soon.',
+
     // Project 4
     'p4.badge':          'Machine Learning',
     'p4.title':          'Customer Churn Prediction',
@@ -299,6 +303,10 @@ const translations = {
     'project.coming-soon':      'Kommer snart',
     'project.planned-features': 'Planlagte funktioner',
     'placeholder.screenshot':   'Skærmbilleder kommer snart',
+
+    // Generic placeholder project tiles
+    'projects.placeholder.title': 'Kommer snart',
+    'projects.placeholder.desc':  'Et nyt projekt er på vej. Kig forbi snart.',
 
     // Project 4
     'p4.badge':          'Maskinlæring',
