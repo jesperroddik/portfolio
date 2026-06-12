@@ -4,7 +4,31 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git fetch *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Jesper\\\\portfolio\" -Recurse -Depth 3)",
+      "Bash(Select-Object FullName)",
+      "Bash(mkdir -p \"C:/Users/Jesper/portfolio/assets/certificates\")",
+      "Bash(touch \"C:/Users/Jesper/portfolio/assets/certificates/.gitkeep\")",
+      "Bash(git *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Jesper\\\\portfolio\" -Recurse -Include \"*.html\", \"*.css\", \"*.js\")",
+      "Bash(Sort-Object FullName)",
+      "mcp__playwright__browser_navigate",
+      "Bash(python -m http.server 8765)",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_resize",
+      "Bash(Stop-Process -Name python -ErrorAction SilentlyContinue)",
+      "Bash(Start-Sleep -Milliseconds 500)",
+      "Bash(python -m http.server 8766)",
+      "Bash(Remove-Item *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/projects/project3.html)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Bash(curl -s \"https://api.github.com/users/jesperroddik/repos?sort=updated&per_page=30\")"
     ]
   }
 }
