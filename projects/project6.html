@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sentiment Analysis Dashboard: Python, NLP, Transformers, Streamlit project by Jesper — Coming Soon">
-  <title>Sentiment Analysis Dashboard | Jesper</title>
+  <meta name="description" content="Danish News Sentiment Monitor: a live NLP dashboard by Jesper that tracks topics and sentiment across major Danish news sources.">
+  <title>Danish News Sentiment Monitor | Jesper</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 
   <!-- Open Graph -->
   <meta property="og:type"        content="article">
-  <meta property="og:title"       content="Sentiment Analysis Dashboard | Jesper">
-  <meta property="og:description" content="Real-time sentiment analysis on social media text using transformer models, with an interactive Streamlit dashboard.">
+  <meta property="og:title"       content="Danish News Sentiment Monitor | Jesper">
+  <meta property="og:description" content="A live dashboard that reads Danish news in near real time, sorts each story by topic, and tracks the mood across the major outlets.">
+  <meta property="og:image"       content="../assets/news_sentiment_monitor/sentiment1.1.png">
   <meta property="og:url"         content="">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,31 +47,34 @@
 
       <div class="project-hero tableau">
         <span class="project-hero-badge" data-i18n="p6.badge">NLP</span>
-        <h1 data-i18n="p6.title">Sentiment Analysis Dashboard</h1>
+        <h1 data-i18n="p6.title">Danish News Sentiment Monitor</h1>
         <div class="project-meta">
-          <span><i class="fas fa-tools"></i> Python · NLP · Hugging Face · pandas · Streamlit</span>
+          <span><i class="fas fa-tools"></i> Python · Hugging Face · Streamlit · PostgreSQL</span>
           <span><i class="fas fa-calendar"></i> 2026</span>
         </div>
       </div>
 
       <div class="project-section">
-        <h2 data-i18n="project.coming-soon">Coming Soon</h2>
+        <h2 data-i18n="project.overview">Overview</h2>
         <p data-i18n="p6.overview">
-          This project is currently in development. It will apply natural language processing
-          to classify sentiment in text data — using a pre-trained transformer model from
-          Hugging Face — and present the results in an interactive Streamlit dashboard with
-          trend analysis and topic breakdown.
+          A live dashboard that keeps an eye on the Danish news cycle. Every couple of hours it
+          gathers fresh headlines and short summaries from seven of the country's biggest news
+          outlets, works out what each story is about, and measures its tone — positive, neutral
+          or negative. The result is a single screen that answers a simple question: which topics
+          are dominating Danish news right now, and how does the mood compare across outlets?
+          Everything is done directly on the Danish text, with no translation step in between.
         </p>
       </div>
 
       <div class="project-section">
-        <h2 data-i18n="project.planned-features">Planned Features</h2>
+        <h2 data-i18n="p6.how.title">How It Works</h2>
         <ul>
-          <li data-i18n="p6.plan.1">Data collection and preprocessing pipeline for text data</li>
-          <li data-i18n="p6.plan.2">Sentiment classification using a fine-tuned Hugging Face transformer model</li>
-          <li data-i18n="p6.plan.3">Topic modelling to identify recurring themes across positive and negative segments</li>
-          <li data-i18n="p6.plan.4">Time-series sentiment trend charts and keyword frequency analysis</li>
-          <li data-i18n="p6.plan.5">Interactive Streamlit dashboard with search, filtering, and export functionality</li>
+          <li data-i18n="p6.how.1">Collects headlines and summaries from seven Danish outlets — five through their public news feeds, and two (DR and TV2) by reading the data their own pages already carry</li>
+          <li data-i18n="p6.how.2">Cleans up each story, removes duplicates, and saves everything to a cloud database so the history builds up over time</li>
+          <li data-i18n="p6.how.3">Scores the tone of every story with a Danish language model that labels it positive, neutral or negative</li>
+          <li data-i18n="p6.how.4">Sorts each story into one of 17 standard news categories (politics, crime, sport, economy and so on) by comparing its meaning to each category — no manual rules required</li>
+          <li data-i18n="p6.how.5">Writes a one-sentence plain-Danish summary of each top story using a language model that runs entirely on the local machine</li>
+          <li data-i18n="p6.how.6">Refreshes the whole pipeline automatically every couple of hours so the dashboard always reflects the latest news</li>
         </ul>
       </div>
 
@@ -86,8 +90,12 @@
             <span>Hugging Face</span>
           </div>
           <div class="tech-item">
-            <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas">
-            <span>pandas</span>
+            <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="scikit-learn">
+            <span>scikit-learn</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL">
+            <span>PostgreSQL</span>
           </div>
           <div class="tech-item">
             <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt="Streamlit">
@@ -97,21 +105,75 @@
             <img src="https://cdn.simpleicons.org/plotly/3F4F75" alt="Plotly">
             <span>Plotly</span>
           </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/ollama/FFFFFF" alt="Ollama">
+            <span>Ollama</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.simpleicons.org/pandas/150458" alt="pandas">
+            <span>pandas</span>
+          </div>
         </div>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="p6.features.title">What the Dashboard Shows</h2>
+        <ul>
+          <li data-i18n-html="p6.features.1"><strong>News overview:</strong> a banner across the top with the day's biggest stories, each boiled down to one plain-Danish sentence.</li>
+          <li data-i18n-html="p6.features.2"><strong>Topic word clouds:</strong> the words that most define each category, so you can see at a glance what's driving the politics, crime or sport coverage.</li>
+          <li data-i18n-html="p6.features.3"><strong>Category breakdown:</strong> a chart showing which topics are getting the most coverage right now.</li>
+          <li data-i18n-html="p6.features.4"><strong>Sentiment by source:</strong> a side-by-side comparison of how positive or negative each outlet's coverage tends to be.</li>
+          <li data-i18n-html="p6.features.5"><strong>Heatmap and article table:</strong> a colour grid of average mood for every source and topic, plus a searchable, filterable list of the underlying articles with links back to the originals.</li>
+        </ul>
       </div>
 
       <div class="project-section">
         <h2 data-i18n="project.screenshots">Screenshots</h2>
         <div class="screenshot-grid">
-          <div class="screenshot-placeholder">
-            <i class="fas fa-image"></i>
-            <span data-i18n="placeholder.screenshot">Screenshots coming soon</span>
-          </div>
-          <div class="screenshot-placeholder">
-            <i class="fas fa-image"></i>
-            <span data-i18n="placeholder.screenshot">Screenshots coming soon</span>
-          </div>
+          <figure class="screenshot-item">
+            <img src="../assets/news_sentiment_monitor/sentiment1.1.png" alt="Main dashboard with the Nyhedsoverblik news overview banner, filters, and stories grouped by category" class="screenshot-img">
+            <figcaption data-i18n="p6.screenshot.1">Main view: the "Nyhedsoverblik" banner of top stories, filters, and news grouped by topic</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img src="../assets/news_sentiment_monitor/sentiment1.2.png" alt="Word clouds showing the most characteristic Danish terms for each news category" class="screenshot-img">
+            <figcaption data-i18n="p6.screenshot.2">Topic word clouds: the most characteristic terms for each category</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img src="../assets/news_sentiment_monitor/sentiment1.3.png" alt="Bar chart of article counts per category next to a sentiment-by-source comparison chart" class="screenshot-img">
+            <figcaption data-i18n="p6.screenshot.3">Category breakdown and a positive/neutral/negative comparison across sources</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img src="../assets/news_sentiment_monitor/sentiment1.4.png" alt="Heatmap of average sentiment by source and category above a filterable article table" class="screenshot-img">
+            <figcaption data-i18n="p6.screenshot.4">Sentiment heatmap by source and topic, plus a filterable article table</figcaption>
+          </figure>
         </div>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="p6.sources.title">News Sources</h2>
+        <p data-i18n="p6.sources">
+          The monitor follows seven national outlets: Politiken, Information, Jyllands-Posten,
+          Berlingske and Kristeligt Dagblad through their public news feeds, plus DR and TV2,
+          which no longer offer a usable feed and are instead read straight from the data their
+          own pages publish. A start-up health check pings every source, so a broken feed shows
+          up immediately rather than quietly dropping out.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2 data-i18n="p6.questions.title">Questions It Answers</h2>
+        <ul>
+          <li data-i18n="p6.questions.1">Which topics are dominating Danish news today, and how has that shifted over the past week?</li>
+          <li data-i18n="p6.questions.2">Which outlets tend to publish the most negative — or the most positive — coverage?</li>
+          <li data-i18n="p6.questions.3">Is the mood around a given topic consistent across outlets, or does coverage diverge?</li>
+          <li data-i18n="p6.questions.4">Which topics suddenly spike — and is one outlet driving it, or all of them at once?</li>
+        </ul>
+      </div>
+
+      <div class="project-section project-links">
+        <a href="https://github.com/jesperroddik/news_sentiment_monitor" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> <span data-i18n="btn.github">View on GitHub</span>
+        </a>
       </div>
 
     </div>
